@@ -1,18 +1,14 @@
 package fem.coders.app.femtechcoders.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
-import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
 @Table(name = "coders")
 public class Coder {
 
     @Id
-    @GeneratedValue(strategy = SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String name;
     private String lastName;

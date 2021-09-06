@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Coder} from "./Coder";
+import Coder from "./Coder";
 
 
 export const CodersList = (props) => (
@@ -7,5 +7,6 @@ export const CodersList = (props) => (
         {props.coders.map(coder =>
             <Coder coders={coder}/>
         )}
+
     </section>
 );

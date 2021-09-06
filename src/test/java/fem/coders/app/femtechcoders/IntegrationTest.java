@@ -24,8 +24,9 @@ public class IntegrationTest {
     @Autowired
     MockMvc mockMvc;
 
-    private CoderRepository coderRepository;
 
+    private CoderRepository coderRepository;
+    @Autowired
     public IntegrationTest(CoderRepository coderRepository) {
         this.coderRepository = coderRepository;
     }
